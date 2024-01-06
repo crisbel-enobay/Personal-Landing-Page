@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lexend:wght@300&display=swap');
+
+.border-dashed{
+    border: 3px dashed #f200ff;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --bg-color: #1f1f21;
+    --text-color: #fff;
+    --main-color: #00ddff;
+    --big-font: 3rem;
+    --p-font: 1.1rem;
+    --font-cursive: 'Dancing Script', cursive;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5rem;
+    padding: 2rem 2rem;
+    transition: all ease .45s;
+    background: transparent;
+}
+.logo{
+    font-family: var(--font-cursive);
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.logo span{
+    color: var(--main-color);
+    font-family: var(--font-cursive);
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0 1rem;
+    transition: all ease .50s;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.menu-btn{
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #3b3b3b;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#menu-icon{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    z-index: 6;
+}
+section{
+    padding: 0 10%;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.home-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 730px;  
+    width: 730px; 
+}
+.circle { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    background: var(--main-color); 
+    -moz-border-radius: 70px; 
+    -webkit-border-radius: 70px; 
+    border-radius: 100%;
+    overflow: hidden;
+ }
+.circle img{
+    width: 450px;
+    height: 450px;
+    z-index: 5;
+    padding-right: 1rem;
+}
+.home-text{
+    width: 750px;
+}
+.home-text span{
+    padding: 5px 25px;
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border-radius: 100px;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    margin: 23px 0;
+}
+.home-text p{
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: #c3c3c3;
+    line-height: 30px;
+    mask-border: 50px;
+    margin-bottom: 30px;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem;
+    background: var(--main-color);
+    color: var(--text-color);
+    border-radius: 100px;
+    margin-bottom: 15px;
+    border: 2px solid var(--main-color);
+    font-size: 1rem;
+    transition: all 0.6s ease-in-out;
+}
+.btn:hover{
+    transform: translateY(-5px);
+    background: transparent;
+    color: var(--main-color);
+}
+.two{
+    background: #141414;
+    border: 2px solid #141414;
+    color: var(--text-color);
+}
+.two:hover{ 
+    border: 2px solid var(--main-color);
+}
+.share{
+    position: absolute;
+    bottom: 3rem;
+    left: 15%;
+    display: flex;
+    align-items: center;
+}
+.share p{
+    font-size: 17px;
+    color: var(--text-color);
+    margin-right: 1rem;
+}
+.social i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border-radius: 50%;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 0 7px;
+    transition: all 0.6 ease-in-out;
+}
+.social i:hover{
+    color: var(--main-color);
+    transform: translateY(-5px);
+}
+@media (max-width: 1850px){
+    header{
+        padding: 15px 8%;
+        transition: .2x;
+    }
+    section{
+        padding: 0 8%;
+        transition: .2s;
+    }
+    .share{
+        left: 8%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1370px){
+    header{
+        padding: 15px 4%;
+        transition: .2x;
+    }
+    section{
+        padding: 0 4%;
+        transition: .2s;
+    }
+    .share{
+        left: 4%;
+        transition: .2s;
+    }
+    /* :root{
+        --big-font: 2rem;
+    --p-font: 1rem;
+    transition: .2s;
+    } */
+}
+@media (max-width: 1020px){
+    .navbar a{
+        margin: 0 15px;
+    }
+    /* :root{
+        --big-font: 1;
+    --p-font: 0.8rem;
+    transition: .2s;
+    } */
+}
+@media (max-width: 950px){
+    .share{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        top: 40%;
+        left: 0;
+        bottom: 0;
+    }
+    .home-img{
+        display: none;
+    }
+    section{
+        padding: 70px 0 4%;
+    }
+    header{
+        padding: 11px;
+        background: #2d2d2d;
+    }
+    .home{
+        height: auto;
+    }
+    .home-text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media (max-width: 950px){
+}
