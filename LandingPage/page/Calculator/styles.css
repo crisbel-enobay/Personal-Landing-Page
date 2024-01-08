@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E6E9EF;
+}
+.theme{
+    display: flex;
+    justify-content: center;
+}
+.btnTheme{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.btnTheme button{
+    height: 2.5rem;
+    width: 3rem;
+    border: none;
+    padding: 0.5rem;
+    margin: 1rem 0rem;
+    box-shadow: 2px 5px 10px -5px #afb1b5;
+    border-radius: 50px;
+}
+.border-dashed{
+    border: 3px dashed rgba(171, 10, 58, 0.434);
+}
+.dark{
+    background-color: #1C1C1C;
+    color: #fff;
+}
+.calculator{
+    padding: 1.5em 1em;
+    display: grid;
+    justify-content: center;
+    border-radius: 20px;
+    height: 60vh;
+    width: 40vh;
+    box-shadow: 8px 10px 6px 0px #afb1b5;
+}
+.light{
+    background-color: #fff;
+}
+.inset{
+    box-shadow: 2px 3px 6px -3px #afb1b5 inset;
+}
+.inset-dark{
+    box-shadow: 2px 5px 10px -5px #1C1C1C inset;
+}
+.offset{
+    box-shadow: 2px 5px 10px -5px #afb1b5;
+}
+.offset-dark{
+    box-shadow: 2px 5px 10px -6px #f2efef;
+}
+#displayCalc{
+    box-sizing: border-box;
+    height: calc(70vh - 60vh);
+    width: calc(40vh - 0vh);
+    border: none;
+    text-align: right;
+    border-radius: 10px;
+    padding: 0rem 0.5rem;
+    font-size: 2rem;
+}
+.text-light{
+    color: #1C1C1C;
+}
+.text-dark{
+    color: #fff;
+}
+.buttons{
+    height: calc(60vh - 10vh);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0.5rem 0rem;
+}
+#equal{
+    grid-row: span 2;
+    color: #fff;
+}
+.bg-blue{
+    background-color: #4D12F5;
+}
+.bg-orange{
+    background-color: #FFAB08;
+}
+.text-color{
+    color: #4D12F5;
+}
+
+.buttons button{
+    border: none;
+    margin: 10%;
+    border-radius: 50px;
+}
+
+#themeDark:hover {
+    background-color: #FFAB08;
+    color: #fff;
+  }
+#themeLight:hover {
+    background-color: #4D12F5;
+    color: #fff;
+  }
+.calculator.light button:hover {
+    background-color: #4D12F5;
+    color: #fff;
+  }
+.calculator.dark button:hover {
+background-color: #FFAB08;
+color: #fff;
+}
+#equal.bg-blue:hover{
+    background-color: #efefef;
+    border: 1px solid #4D12F5;
+    color: #4D12F5;
+}
+#equal.bg-orange:hover{
+    background-color: #efefef;
+    border: 2px solid #FFAB08;
+    color: #FFAB08;
+}
+
+button.text-color.offset-dark{
+    color: #FFAB08;
+}

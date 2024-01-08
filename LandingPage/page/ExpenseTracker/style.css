@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+
+:root{
+    --box-shadow: 5px 5px 3px 1px rgba(81, 2, 75, 0.8), 0 1px 2px rgba(0,0,0,0.24);
+    --border-radius: 15px;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+body{
+    background-color: #9c88ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+h2{
+    color: rgb(81, 2, 75);
+    margin: 1rem 0 0 0;
+}
+.container{
+    margin: 1rem auto;
+    width: 60vh;
+    background-color: #333541;
+    padding: 2rem;
+    color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0px -5px 3px 0px rgba(81, 2, 75, 0.5);
+}
+h3{
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 1rem;
+    margin: 1px;
+}
+h4{
+    margin: 0;
+    text-transform: uppercase;
+}
+h4, h3{
+    color: #9c88ff;
+}
+.inc-exp-container > div > h4{
+    color: rgb(81, 2, 75);
+}
+.inc-exp-container{
+    border-radius: var(--border-radius);
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.inc-exp-container > div{
+    flex: 1;
+    text-align: center;
+}
+.inc-exp-container > div:first-of-type{
+    border-right: 1px solid #dedede;
+}
+.money{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin: 0.5rem 0;
+}
+.money.plus{
+    color: #2ecc71;
+}
+.money.minus{
+    color: #c0392b;
+}
+label{
+    display: inline-block;
+    margin: 10px 0;
+}
+input[type='text'],
+input[type='number']{
+    border: 1px solid #dedede;
+    border-radius: var(--border-radius);
+    display: block;
+    font-size: 16px;
+    padding: 0.5rem;
+    width: 100%;
+        box-shadow: var(--box-shadow);
+}
+.btn{
+    cursor: pointer;
+    background-color: #9c88ff;
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border: 0;
+    display: block;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 1rem 0 1rem;
+    border-radius: var(--border-radius);
+    width: 100%;
+}
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+.list li{
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    position: relative;
+}
+.list li.plus{
+    border-right: 7px solid #2ecc71;
+}
+.list li.minus{
+    border-right: 7px solid #c0392b;
+}
+.delete-btn{
+    cursor: pointer;
+    background-color: #c0392b;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.1rem 0.3rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.list li:hover .delete-btn{
+    opacity: 1;
+}
+.btn:hover{
+    background-color: rgb(81, 2, 75);
+    border: 2px solid #9c88ff;
+    box-shadow: none;
+}
+input[type='text']:focus,
+input[type='number']:focus{
+    outline: 2px solid #9c88ff;
+}

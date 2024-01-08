@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+:root{
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(280deg, rgba(2,0,36,1) 0%, rgba(173,75,163,1) 0%, rgba(253,189,249,1) 68%, rgba(189,252,253,1) 99%);
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 20vh);
+    width: calc(100vh - 40vh);
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 2rem;
+    margin: 0.5rem;
+    box-shadow: 8px 10px 6px -5px #795279;
+}
+h2{
+    text-align: center;
+    color: #7e3890;
+}
+.form{
+    width: 100%;
+}
+
+.form-control input{
+    display: block;
+    border: none;
+    box-shadow: 1px -0px 15px 1px #e4cce4;
+    border-radius: 20px;
+    padding: 1em;
+    margin: 0.5em 0;
+    width: 100%;
+    color: #7e3890;
+}
+.form-control label{
+    color: #7e3890;
+    padding: 1em;
+
+}
+button{ 
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 0px 10px -2px #795279;
+    border-radius: 25px;
+    padding: 1em;
+    background: linear-gradient(280deg, rgba(2,0,36,1) 0%, rgba(173,75,163,1) 0%, rgb(249, 128, 241) 100%);
+    color: #fff;
+    font-weight: bold;
+    width: 50%;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+input:focus{
+    outline: 2px solid #7e3890;
+}
+button:hover {
+    background: linear-gradient(280deg, rgba(2,0,36,1) 0%, rgb(75, 173, 171) 0%, rgb(128, 186, 249) 100%);
+}
+.border-dashed{
+    border: 3px dashed rgba(171, 10, 58, 0.434);
+}
+
+.form-control.success input {
+    border: 2px solid var(--success-color); 
+}
+
+.form-control.error input {
+    border: 2px solid var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    visibility: hidden;
+    padding: 0 1rem;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
