@@ -196,7 +196,7 @@ h1 button {
   border-radius: 15px;
   font-size: 16px;
   padding: 12px;
-  min-width: 500px;
+  min-width: 400px;
   max-width: 100%;
 }
 .form-group textarea:hover{
@@ -206,4 +206,19 @@ h1 button {
 .btn:hover{
   background-color: #E68131;
   transition: all 0.2s ease-in-out;
+}
+@media (max-width: 600px){
+  .cards{
+    width: 400px;
+  }
+  h1{
+   margin-right: 8rem;
+  }
+  .form-group textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
 }

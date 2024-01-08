@@ -12,11 +12,9 @@ body {
 
 .container {
   display: block;
-  width: 50%;
+  width: 80%;
   margin: auto;
-
 }
-
 .btn {
   margin: 25px;
   display: inline-block;
@@ -50,4 +48,23 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+@media (max-width: 970px){
+  .btn {
+    margin: 20px;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+  }
+}
+@media (max-width: 650px){
+  .btn {
+    margin: 15px;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+  }
+  .container{
+    width: 100%;
+  }
 }
